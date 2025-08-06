@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="enhanced form with additional features">
+    <meta name="author" content="Phares Mwangi">
+    <title>enhanced form</title>
+</head>
+<body>
+    <h1>Enhanced HTML5</h1>
+    <section>
+        <h2>1. List of web development tools.</h2>
+
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>Chrome DevTools</li>
+            <li>Postman</li>
+            <li>Figma</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Table use cases</h2>
+        <table border="1">
+            <caption>Programming languages comparison</caption>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Skeleton development for web application</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Styling and layout</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Enabling functionality</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Backend development, data  science</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Embedding media</h2>
+        <h3>Embedding an image</h3>
+        <img src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg" alt="HTML image to show html icon" width="300" height="200"><br><br>
+        <h3>embedding a video</h3>
+        <video controls autoplay loop width="400" height="300">
+            <source src="https://videos.pexels.com/video-files/27155332/12086327_1080_1920_24fps.mp4" type="video/mp4">
+            Your browser does not support videos
+        </video>
+    </section>
+
+    <section aria-labelledby="registration-form">
+        <h2>Registration Form</h2>
+        <form action="" method="" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="name@xample.com" required><br><br>
+                <label for="date">DOB:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="35" required><br><br>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Account setup</legend>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="username" pattern="[A-Za-z]{6}" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="password" minlength="8" maxlength="16" required><br><br>
+                <label for="confirm">Confirm Password:</label>
+                <input type="password" name="confirm" id="confirm" placeholder="password" minlength="8" maxlength="16" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <select name="country" id="" required>
+                <option value="">Select your country</option>
+                <option value="ke">Kenya</option>
+                <option value="ug">Uganda</option>
+                <option value="tz">Tanzania</option>
+            </select>
+            <br><br>
+            <label for="upload">Upload CV</label>
+            <input type="file" id="upload" name="upload" accept=".pdf" required> <br><br>
+            </fieldset>
+            
+            <input type="submit" value="Register">
+
+        </form>
+    </section>
+</body>
+</html>
